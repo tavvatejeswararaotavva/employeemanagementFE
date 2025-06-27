@@ -1,0 +1,33 @@
+.employee-toolbar {
+  display: flex;
+  flex-wrap: wrap;      /* will wrap on very small screens only */
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;     /* so it scrolls horizontally on tiny screens instead of breaking weirdly */
+}
+
+.employee-toolbar mat-form-field {
+  flex: 1 1 180px;
+  max-width: 220px;
+  min-width: 140px;
+}
+
+.employee-toolbar button {
+  flex: 0 0 auto;
+  height: 56px;
+  white-space: nowrap;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field-outline {
+  border-color: rgba(0, 0, 0, 0.6) !important;
+}

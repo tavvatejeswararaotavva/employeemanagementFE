@@ -1,0 +1,37 @@
+.login-container {
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.user-icon {
+  width: 50px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.forgot-password {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.terms {
+  font-size: 12px;
+  margin-top: 10px;
+}

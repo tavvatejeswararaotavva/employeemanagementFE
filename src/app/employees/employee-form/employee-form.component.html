@@ -1,0 +1,39 @@
+<div class="employee-form-container">
+  <h2>{{ isEdit ? 'Edit Employee' : 'Add New Employee' }}</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Department</mat-label>
+      <input matInput formControlName="department" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Salary</mat-label>
+      <input matInput type="number" formControlName="salary" required />
+    </mat-form-field>
+
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+
+    <button mat-raised-button color="primary" type="submit">
+      {{ isEdit ? 'Update' : 'Create' }}
+    </button>
+    <button mat-button type="button" (click)="cancel()">Cancel</button>
+  </form>
+</div>
